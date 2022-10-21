@@ -109,6 +109,10 @@ img {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-studia .link,
 .menu-portfolio .link,
@@ -128,6 +132,20 @@ img {
 .menu-studia .link.current {
     color: var(--primary-color-text);
 }
+.menu-dist {
+   display: block;
+   position: relative; 
+}
+.link.current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color-text);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+}
 
 
 .mail .link,
@@ -139,6 +157,10 @@ img {
 .logo-mail {
     color: currentColor;
     margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail .link:hover,
 .tel .link:hover,
@@ -199,13 +221,15 @@ img {
     margin-bottom: 20px;
 }
 /* .logo-color задано в стилі Шапки */
-.f-adress .link,
-.f-mail .link,
-.f-tel .link {
+.kontakt .link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .f-adress .link {
     color: var(--footer-color-text);
@@ -214,12 +238,8 @@ img {
 .f-tel .link {
     color: var(--kontakty-footer)   
 }
-.f-adress .link:hover,
-.f-adress .link:focus,
-.f-mail .link:hover,
-.f-mail .link:focus,
-.f-tel .link:hover,
-.f-tel .link:focus {
+.kontakt .link:hover,
+.kontakt .link:focus {
     color: var(--primary-color-text);
 }
 .f-kontakty .kontakt:not(:last-child) {
@@ -254,6 +274,10 @@ img {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .solid-round:hover,
 .solid-round:focus {
@@ -299,6 +323,10 @@ img {
     letter-spacing: 0.06em;
     background-color: var(--primary-color-text);
     color: var(--footer-color-text);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -399,6 +427,10 @@ img {
     fill: var(--border-client);
     justify-content: center;
     align-items: center;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-soc-comand {
     color: currentColor;
@@ -444,6 +476,10 @@ img {
     fill: var(--border-client);
     justify-content: center;
     align-items: center;
+
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-client {
     color: currentColor;
@@ -472,6 +508,10 @@ img {
     background-color: var(--secondary-color-bg);
     color: var(--main-color-text);
     padding: 6px 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .all .fr-button:hover,
@@ -527,6 +567,10 @@ img {
 }
 .border-shadow > .link {
     display: block;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .border-shadow > .link:hover,
 .border-shadow > .link:focus {
