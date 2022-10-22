@@ -697,4 +697,5 @@ img {
     border: none;
     padding: 0;
     cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
