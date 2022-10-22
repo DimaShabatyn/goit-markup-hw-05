@@ -37,6 +37,7 @@
     --working-solid: rgba(47, 48, 58, 0.8);
     --backdrop-color: rgba(0, 0, 0, 0.2);
     --modal-bg-color: #FFFFFF;
+    --time-250: 250ms;
 }
 
 html {
@@ -117,7 +118,7 @@ img {
     padding-bottom: 32px;
 
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .menu-studia .link,
@@ -165,7 +166,7 @@ img {
     margin-right: 10px;
 
     transition-property: fill;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .mail .link:hover,
@@ -234,7 +235,7 @@ img {
     letter-spacing: 0.03em;
 
     transition-property: color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .f-adress .link {
@@ -282,7 +283,7 @@ img {
     align-items: center;
 
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .solid-round:hover,
@@ -331,7 +332,7 @@ img {
     color: var(--footer-color-text);
 
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .hero-button:hover,
@@ -458,7 +459,7 @@ img {
     align-items: center;
 
     transition-property: background-color, fill;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .logo-soc-comand {
@@ -507,7 +508,7 @@ img {
     align-items: center;
 
     transition-property: border-color, fill;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .logo-client {
@@ -539,7 +540,7 @@ img {
     padding: 6px 22px;
 
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 
@@ -599,7 +600,7 @@ img {
     position: relative;
 
     transition-property: box-shadow;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .border-shadow > .link:hover,
@@ -637,7 +638,7 @@ img {
 
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration: 250ms;
+    transition-duration: var(--time-250);
     transition-timing-function: var(--transition-bezier);
 }
 .border-shadow > .link:hover .hover-overlay-text,
@@ -658,7 +659,7 @@ img {
     background-color: var(--backdrop-color);
     opacity: 1;
     visibility: visible;
-    transition: opacity 250ms var(--transition-bezier), visibility 250ms var(--transition-bezier);
+    transition: opacity var(--time-250) var(--transition-bezier), visibility var(--time-250) var(--transition-bezier);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -673,7 +674,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms var(--transition-bezier);
+    transition: transform var(--time-250) var(--transition-bezier);
 
     min-width: 528px;
     min-height: 581px;
