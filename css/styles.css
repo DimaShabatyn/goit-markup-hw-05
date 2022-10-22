@@ -38,6 +38,7 @@
     --backdrop-color: rgba(0, 0, 0, 0.2);
     --modal-bg-color: #FFFFFF;
     --time-250: 250ms;
+    --border-btn: rgba(0, 0, 0, 0.1);
 }
 
 html {
@@ -697,5 +698,5 @@ img {
     border: none;
     padding: 0;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-btn);
 }
