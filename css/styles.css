@@ -694,4 +694,6 @@ img {
     top: 8px;
     right: 8px;
     border: none;
+    padding: 0;
+    cursor: pointer;
 }
