@@ -684,18 +684,14 @@ img {
     box-shadow: var(--shadow-card-solid);
 }
 .btn-close {
-    position: absolute;
-    display: flex;
-    justify-content: center;
+    display:flex;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
     top: 8px;
     right: 8px;
     border: none;
-    background-image: url(../images/close.svg);
-    background-repeat: no-repeat;
-    background-color: transparent;
-    cursor: pointer;
-
 }
